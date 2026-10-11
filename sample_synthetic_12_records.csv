@@ -1,0 +1,13 @@
+Area,CNG Station Name,Address,Latitude,Longitude,Google Maps URL,Source URL
+Synthetic Bengaluru Area,Synthetic GAIL CNG Outlet 01,"Synthetic Test Road 01, Test District",12.9716,77.5946,https://example.com/maps/gail-01,https://example.com/gail/area-01
+Synthetic Mysuru Area,Synthetic GAIL CNG Outlet 02,"Synthetic Test Road 02, Test District",12.2968,76.6404,https://example.com/maps/gail-02,https://example.com/gail/area-02
+Synthetic Hyderabad Area,Synthetic GAIL CNG Outlet 03,"Synthetic Test Road 03, Test District",17.387,78.4887,https://example.com/maps/gail-03,https://example.com/gail/area-03
+Synthetic Bhubaneswar Area,Synthetic GAIL CNG Outlet 04,"Synthetic Test Road 04, Test District",20.2961,85.8245,https://example.com/maps/gail-04,https://example.com/gail/area-04
+Synthetic Bengaluru Area,Synthetic GAIL CNG Outlet 05,"Synthetic Test Road 05, Test District",12.9726,77.5956,https://example.com/maps/gail-05,https://example.com/gail/area-01
+Synthetic Mysuru Area,Synthetic GAIL CNG Outlet 06,"Synthetic Test Road 06, Test District",12.2978,76.64139999999999,https://example.com/maps/gail-06,https://example.com/gail/area-02
+Synthetic Hyderabad Area,Synthetic GAIL CNG Outlet 07,"Synthetic Test Road 07, Test District",17.385,78.4867,https://example.com/maps/gail-07,https://example.com/gail/area-03
+Synthetic Bhubaneswar Area,Synthetic GAIL CNG Outlet 08,"Synthetic Test Road 08, Test District",20.2971,85.8255,https://example.com/maps/gail-08,https://example.com/gail/area-04
+Synthetic Bengaluru Area,Synthetic GAIL CNG Outlet 09,"Synthetic Test Road 09, Test District",12.973600000000001,77.5966,https://example.com/maps/gail-09,https://example.com/gail/area-01
+Synthetic Mysuru Area,Synthetic GAIL CNG Outlet 10,"Synthetic Test Road 10, Test District",12.2958,76.6394,https://example.com/maps/gail-10,https://example.com/gail/area-02
+Synthetic Hyderabad Area,Synthetic GAIL CNG Outlet 11,"Synthetic Test Road 11, Test District",17.386000000000003,78.4877,https://example.com/maps/gail-11,https://example.com/gail/area-03
+Synthetic Bhubaneswar Area,Synthetic GAIL CNG Outlet 12,"Synthetic Test Road 12, Test District",20.298099999999998,85.8265,https://example.com/maps/gail-12,https://example.com/gail/area-04
