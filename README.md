@@ -1,72 +1,48 @@
-﻿# GAIL CNG Outlets Scraper
+# GAIL Gas CNG Outlet Scraper
 
-Python project for collecting and organizing GAIL CNG outlet information by area.
+Selenium automation for navigating the GAIL Gas website, discovering available areas, selecting CNG outlet listings, and saving station details in area-wise Excel workbooks.
 
-## Overview
+## How it works
 
-This repository contains the Python script used for the project.
-The actual collection methods, geographic coverage, and output depend
-on the implementation and source availability.
+1. Opens the source website in a visible Chrome browser.
+2. Handles the page popup, navigates the areas-of-operation menu, and enters the CNG outlet workflow.
+3. Discovers available areas and station options from the rendered site.
+4. Extracts available outlet details, including address and map-link information, while preserving the associated area and source URL.
+5. Cleans blank station names, deduplicates records within each area, and writes an Excel workbook per area plus a processing log.
 
-## Features
+## Area workbook contents
 
-- Automated CNG outlet data collection
-- Area-wise outlet data organization
-- Excel dataset for Bengaluru Urban and Rural
+Each GAIL_Gas_CNG_Outlets_<Area>.xlsx workbook is saved under GAIL_Gas_CNG_Outlets_Area_Wise/ and contains:
 
-## Technology Stack
+- CNG_Outlets — Area, CNG Station Name, Address, Latitude, Longitude, Google Maps URL, and Source URL
+- Summary — source URL, area name, outlet record count, coordinate completeness, and duplicates removed
 
-- Python
-- Data collection and processing
-- Structured data handling
-- Excel integration, where supported by the script
+The script also writes Area_Log.xlsx with the per-area processing log. Individual areas are saved as they are processed, so completed area outputs can remain available if a later area fails.
 
-## Repository Structure
+## Files
 
-```
-gail-cng-outlets-scraper/
-|-- GAIL_Gas_CNG_Outlets_Area_Wise.py
-|-- README.md
-|-- requirements.txt
-|-- .gitignore
-```
+- GAIL_Gas_CNG_Outlets_Area_Wise.py — scraper entry point
+- An example area workbook — sample output dataset
+- requirements.txt — Python dependencies
 
-## Setup
+## Requirements and setup
 
-Use Python 3.10 or a compatible version supported by the script.
+- Python 3.10 or a compatible version
+- Google Chrome
+- Selenium, pandas, and openpyxl from requirements.txt
 
-Create and activate a virtual environment:
-
-```powershell
-python -m venv .venv
-.venv\Scripts\Activate.ps1
-```
-
-Install dependencies:
-
-```powershell
-pip install -r requirements.txt
-```
+    python -m venv .venv
+    .venv/Scripts/Activate.ps1
+    pip install -r requirements.txt
 
 ## Run
 
-```powershell
-python "GAIL_Gas_CNG_Outlets_Area_Wise.py"
-```
+    python GAIL_Gas_CNG_Outlets_Area_Wise.py
 
-Review the script configuration before running it. If authentication
-is required, use authorized credentials and keep secrets outside
-the source code.
+The output folder is configured by OUTPUT_FOLDER near the top of the script. It is created relative to the current working directory unless you change that value.
 
-## Data and Usage Notes
+## Notes
 
-- Data completeness depends on the source and collection process.
-- Check the source provider's terms and permissions.
-- Do not publish confidential data or credentials.
-- Treat collected data as a snapshot unless freshness is verified.
-
-## Author
-
-**Pratyush Das**
-
-GitHub: https://github.com/pratyush110022
+- The browser is visible by default; headless mode is commented out in the script.
+- Navigation relies on current website menus, selectors, and station controls, so markup changes may require maintenance.
+- Check the source website's terms and applicable policies before using or redistributing collected data.
