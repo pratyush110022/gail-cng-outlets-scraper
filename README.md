@@ -22,7 +22,7 @@ The script also writes Area_Log.xlsx with the per-area processing log. Individua
 ## Files
 
 - GAIL_Gas_CNG_Outlets_Area_Wise.py — scraper entry point
-- An example area workbook — sample output dataset
+- Existing Bengaluru Urban & Rural District workbook — scraper output example
 - requirements.txt — Python dependencies
 
 ## Requirements and setup
@@ -46,3 +46,7 @@ The output folder is configured by OUTPUT_FOLDER near the top of the script. It 
 - The browser is visible by default; headless mode is commented out in the script.
 - Navigation relies on current website menus, selectors, and station controls, so markup changes may require maintenance.
 - Check the source website's terms and applicable policies before using or redistributing collected data.
+
+## Synthetic sample data
+
+[`sample_synthetic_12_records.csv`](sample_synthetic_12_records.csv) contains **12 synthetic test records** using the scraper's output schema. These records were generated for schema inspection and portfolio/demo purposes; they were not collected from the source website or API. Names and addresses are fictional, contact details and example.com links are placeholders, coordinates are illustrative, and ratings/prices are not real or current. Do not use them for real-world navigation or pricing decisions.
